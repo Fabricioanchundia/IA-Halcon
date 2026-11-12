@@ -1,6 +1,6 @@
 # Imagen del scorer de Halcón. Se construye en dos pasos para aprovechar la caché:
 # primero las dependencias (cambian poco), después el código (cambia seguido).
-FROM python:3.12-slim
+FROM python:3.15-slim
 
 COPY --from=ghcr.io/astral-sh/uv:0.11.32 /uv /bin/uv
 
